@@ -32,6 +32,9 @@ const Navbar = () => {
                     {
                         navLinks.map((link, index) => (
                             <a key={index} href={link.href}
+                                onClick={() => 
+                                    setActiveLink(link.href)
+                                }
                                 className={`text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:0.5
                                 after:w-0 hover:after:w-full after:bg-blue-600 after:transition-all
                                  ${activeLink === link.href ? 'text-blue-600 after:w-full' : 'text-gray-600 hover:text-gray-900'}`}>
@@ -42,7 +45,10 @@ const Navbar = () => {
                 </div>
 
                 {/* get in touch btn */}
-
+                  <button className="hidden md:block bg-blue-600 text-white px-6 py-2.5 rounded-md
+                   hover:bg-blue-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100">
+                    <a href="#news">Get in Touch</a>
+                  </button>
                 {/* mobile menu */}
 
             </div>
