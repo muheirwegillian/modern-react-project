@@ -3,14 +3,17 @@ import './App.css'
 import Navbar from './components/Navbar'
 
 function App() {
-  
+
 
   return (
-    <>
-     <Navbar />
-     <Hero/>
-    </>
+    <main className="relative min-h-screen overflow-x-hidden ">
+      <div className></div>
+      <div overflow-hidden>
+        <Navbar />
+        <Hero />
+      </div>
+    </main>
   )
 }
 
-export default App
+export default A
