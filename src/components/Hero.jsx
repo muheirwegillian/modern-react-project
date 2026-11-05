@@ -1,9 +1,9 @@
 import React from 'react'
-import heroImage from '../assets/hero-image.png'
+import heroImage from '../assets/hero.png';
 
 const Hero = () => {
   return (
-    <Section className='container mx-auto flex flex-col md:flex-row justify-between items-centerpt-44 pb-6 px-4 sm:px-6 lg:px-8'>
+    <section id="home" className='container mx-auto flex flex-col md:flex-row justify-between items-center pt-44 pb-6 px-4 sm:px-6 lg:px-8'>
       {/* left column */}
 
       <div className='w-full md:w-1/2 space-y-8'>
@@ -33,7 +33,7 @@ const Hero = () => {
           />
 
           <button className="bg-blue-600 text-white px-8 py-4 rounded-xl hover:bg-blue-700  cursor-pointer 
-          transition-all hover:shadow-lg hover:sadow-300">
+          transition-all hover:shadow-lg hover:shadow-blue-300">
             →
           </button>
         </div>
@@ -45,11 +45,11 @@ const Hero = () => {
       <div className='w-full md:w-1/2 mt-16 md:mt-0 pl-0 md:pl-12'>
         <div className='relative w-full h-full'>
           <img src={heroImage} alt="Hero Image" 
-          className="rounded-lg relative z-10 hover:scale-{1.02} transition-transformation duration-300"/>
+          className="rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300"/>
         </div>
       </div>
 
-    </Section>
+    </section>
   )
 }
 
